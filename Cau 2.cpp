@@ -5,7 +5,7 @@
 bool checkSoNguyenTo(int a);
 void nhapMaTran(int a[][100], int n);
 void xuatMaTran(int a[][100], int n);
-float tinhTrungBinhCongSoNguyenTo(int a[100][100], int m, int n);
+float tinhTrungBinhCongSoNguyenTo(int a[100][100], int n);
 float tinhTrungBinhCongSoHoanThien(int a[100][100], int n);
 
 void nhapMaTran(int a[][100], int n)
@@ -153,7 +153,7 @@ void menu()
     printf("Nhap 2: Xuat ma tran\n");
     printf("Nhap 3: Tinh trung binh cong cua cac so tren duong bien cua ma tran\n");
     printf("Nhap 4: Tinh trung binh cong cac so hoan thien tren duong cheo chinh cua ma tran\n");
-    printf("Nhap 5: Hien thi ma tran tu file");
+    printf("Nhap 5: Hien thi ma tran tu file\n");
     printf("Moi ban chon: ");
 }
 
@@ -167,7 +167,7 @@ int main()
     {
         /* code */
         menu();
-        printf("====================================================");
+        printf("\n====================================================");
         scanf("%d", &select);
         switch (select)
         {
@@ -175,7 +175,7 @@ int main()
             exit(0);
         case 1:
         {
-            printf("Ma tran cap? = ");
+            printf("Ma tran cap may ? ");
             scanf("%d", &n);
             printf("nhap vao ma tran:\n");
             nhapMaTran(a, n);
